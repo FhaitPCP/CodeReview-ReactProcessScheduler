@@ -28,3 +28,10 @@ function App() {
 }
 
 export default App;
+
+/**
+ *##Falta da função de Refresh##
+ * O app em si renderiza apenas uma vez, sumindo após seleção de uma das opções do menu. 
+ * Minha sugestão: Para resolver isso, é necessário implementar uma função de refresh que 
+ * permita ao usuário voltar à página inicial ou atualizar a página para ver as mudanças.
+ */
