@@ -4,6 +4,15 @@ const Simulation = ({ result, selectedAlgorithm, quantum }) => {
     return <p className="rounded p-3 mb-2 bg-white text-dark">Nenhum processo disponível para exibir.</p>;
   }
 
+  /**
+   * ##Utilização de expressão condicional com baixa legibilidade##
+   * O código utiliza uma expressão condicional para verificar se 
+   * processosOrdenados tem elementos, o que pode ser difícil de ler e entender. 
+   * Minha sugestão: Para melhorar a legibilidade, é recomendado usar uma 
+   * estrutura de controle mais clara, como um if-else, para verificar a existência 
+   * de processos antes de renderizar a tabela.
+   */
+
   const { processosOrdenados, tempoMedioDeEspera } = result;
 
   return (
