@@ -62,6 +62,12 @@ const lru = (arrayDeNumeros, quadros) => {
 
   return { pageFaults, hits };
 };
+/**
+ * ## Aviso do SonarQube: Valor inicial no reduce() ##
+ * O código está utilizando o método `reduce` sem passar um valor inicial como segundo argumento.
+ * Minha sugestão: Adicione o valor inicial. Se o `reduce` for executado em um array vazio sem esse parâmetro, o JavaScript 
+ * lança um erro crítico (`TypeError`) e quebra a aplicação.
+ */
 
 
 // Função Ótimo

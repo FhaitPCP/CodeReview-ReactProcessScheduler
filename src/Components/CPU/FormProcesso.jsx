@@ -3,6 +3,13 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Alert from 'react-bootstrap/Alert';
 
+/**
+ * ## Aviso do SonarQube: parseFloat ##
+ * O código está usando a função global `parseFloat`, e a ferramenta pede para trocar por `Number.parseFloat`.
+ * Minha sugestão: Faça a troca. Na prática, o cálculo é o mesmo e não muda o funcionamento do app. 
+ * Essa é apenas uma regra de boa prática para manter o código organizado.
+ */
+
 function FormProcesso({ onAddCard, selectedAlgorithm }) {
     const [formData, setFormData] = useState({ chegada: '', duracao: '', prioridade: '' });
     const [error, setError] = useState('');
